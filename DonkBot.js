@@ -3,8 +3,8 @@ var currTime = "";
 
 var bot = new DiscordClient({
     autorun: true,
-	email: "discordbottesting1@gmail.com",
-	password: "Redstoner11" 
+	email: "youarent@gmail.com",
+	password: "stealingmyinfo" 
 });
 
 bot.on('ready', function() {
@@ -15,7 +15,7 @@ bot.on('message', function(user, userID, channelID, message, rawEvent) {
 	
    if (message.indexOf("meme") > -1) {
 		
-        sendFiles(channelID, ["Clannad.jpg"]);
+        sendFiles(channelID, ["picture.jpg"]);
 		
    }
    if (message === "currenttime") {
@@ -26,9 +26,9 @@ bot.on('message', function(user, userID, channelID, message, rawEvent) {
     });
 	   
    }
-   if (message.indexOf("tits") > -1) {
+   if (message.indexOf("meme2") > -1) {
 	   
-	   sendFiles(channelID, ["Plot.gif"]);
+	   sendFiles(channelID, ["gif.gif"]);
 	   
 	   }
    
@@ -53,7 +53,7 @@ bot.on('any', function() {
 	console.log(currentTime + " is the current time");
 	if (currentTime === "4:20 AM" || currentTime === "4:20 PM") {
 	   
-		sendFiles("160867765815607296", ["Clannad.jpg"]);
+		sendFiles("My channel ID", ["picture.jpg"]);
 		
 	}
 	
@@ -84,25 +84,3 @@ function sendFiles(channelID, fileArr, interval) {
 	}
 	_sendFiles();
 }
-
-
-/* Channel IDs
-MTG- 167080257831174144
-Shitposting- 160866222194425856
-Scheduling- 162620746022125569
-Meta- 183410005817556992
-Backroom- 161953525713207296
-Animu- 203056139317936129
-Admin- 160867765815607296
-*/
-
-/* Sending Messages
-    bot.sendMessage({
-        to: channelID,
-        message: "Desu Desu!"
-    });
-*/
-
-/* Sending Pictures
-	sendFiles(channelID, ["Clannad.jpg"]);
-*/
